@@ -1,0 +1,20 @@
+<!-- templates/success.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Success</title>
+</head>
+<body>
+    <h1>Success! Payment was successful.</h1>
+    <p><strong>Customer:</strong> {{ customer_name }}</p>
+    <p><strong>Created:</strong> {{ created_date }}</p>
+    <p><strong>Current period:</strong> {{ current_period_start }} to {{ current_period_end }}</p>
+    <p><strong>ID:</strong> {{ subscription_id }}</p>
+    <p><strong>Discounts:</strong> {{ discounts }}</p>
+    <p><strong>Billing method:</strong> {{ billing_method }}</p>
+    <p><strong>Payment method:</strong> {{ payment_method }}</p>
+    <p><strong>Tax calculation:</strong> {{ tax_calculation }}</p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe Checkout Session</title>
+</head>
+<body>
+    <h1>Create Checkout Session</h1>
+    <form action="/checkout" method="POST">
+        <label for="subscription_type">Subscription Type:</label><br>
+        <select id="subscription_type" name="price_id" required>
+            <option value="price_1PEs5fSGXw62evcF6iwvKSin">SAAS Monthly Subscription - 10000RS/month</option>
+            <option value="price_1PINjPSGXw62evcFQiPGk5HV">Autointelli TOOL Yearly Subscription - 12000RS/Day</option>
+        </select><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <button type="submit">Create Session</button>
+    </form>
+</body>
+</html>
