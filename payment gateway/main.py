@@ -90,7 +90,7 @@ def success():
             os.remove(invoice_filename)
         else:
 
-            msg = Message(subject='Subscription Created', sender='sdharanesh142@gmail.com', recipients=[customer.email])
+            msg = Message(subject='Subscription Created', sender='kasi4suresh@gmail.com', recipients=[customer.email])
             msg.body = email_body
             mail.send(msg)
 
